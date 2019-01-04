@@ -1,3 +1,5 @@
+Document 2019-01-04
+
 # Ng7Inspinia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
