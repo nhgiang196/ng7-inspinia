@@ -10,6 +10,7 @@ export class DashView2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    alert('abcccc');
   }
 
 }

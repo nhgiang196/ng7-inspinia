@@ -9,9 +9,24 @@
               <input type="text" class="form-control" [(ngModel)]="user.Username" #Username="ngModel" name="Username" placeholder="Username" required>
           </div>        
           <div class="form-group">
+<<<<<<< HEAD
+              <input type="email" class="form-control" placeholder="Email" required="">
+          </div>
+          <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" required="">
+          </div>
+          <div class="form-group">
+              <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy </label></div>
+          </div>
+          <button type="submit" (click)="abc()" class="btn btn-primary block full-width m-b">Register</button>
+
+          <p class="text-muted text-center"><small>Already have an account?</small></p>
+          <a class="btn btn-sm btn-white btn-block" href="#">Login</a>
+=======
               <input type="password" class="form-control" [(ngModel)]="user.Password" #Password="ngModel" name="Password" placeholder="Password" required>
           </div>        
           <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary block full-width m-b">Login</button>        
+>>>>>>> 0d9989459e3902608611bab365e1536c4c903aa6
       </form>
       <p class="m-t"> <small>FEPV Team  &copy; 2018 </small> </p>
   </div>

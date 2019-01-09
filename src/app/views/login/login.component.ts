@@ -33,4 +33,11 @@ export class LoginComponent implements OnInit {
   loginUser() {
     this.auth.login(this.user.Username,this.user.Password);
   }
+<<<<<<< HEAD
+  abc() {
+    alert('hello world');
+  }
+
+=======
+>>>>>>> 0d9989459e3902608611bab365e1536c4c903aa6
 }
