@@ -11,5 +11,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+  abc() {
+    alert('hello world');
+  }
 
 }

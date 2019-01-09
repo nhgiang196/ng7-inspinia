@@ -1,5 +1,5 @@
-import {Routes} from "@angular/router";
-import {MainViewComponent} from "./views/main-view/main-view.component";
+import { Routes } from "@angular/router";
+import { MainViewComponent } from "./views/main-view/main-view.component";
 import { BasicComponent } from './components/common/layouts/basic/basic.component';
 import { BlankComponent } from './components/common/layouts/blank/blank.component';
 import { MinorViewComponent } from './views/minor-view/minor-view.component';
@@ -9,34 +9,34 @@ import { LandingViewComponent } from './views/main-view/landing-view/landing-vie
 import { LoginComponent } from './views/login/login.component';
 import { TablesComponent } from './views/minor-view/tables/tables.component';
 import { FormViewComponent } from './views/minor-view/form-view/form-view.component';
-export const ROUTES:Routes = [
+export const ROUTES: Routes = [
   // Main redirect
-  {path: '', redirectTo: 'mainView', pathMatch: 'full'},
+  { path: '', redirectTo: 'mainView', pathMatch: 'full' },
 
   // App views
   {
     path: '', component: BasicComponent,
     children: [
-      {path: 'mainView', component: MainViewComponent},
-      {path: 'dashView1', component: DashView1Component},
-      {path: 'dashView2', component: DashView2Component},      
+      { path: 'mainView', component: MainViewComponent },
+      { path: 'dashView1', component: DashView1Component },
+      { path: 'dashView2', component: DashView2Component },
       {
         path: 'minorView', component: MinorViewComponent,
-        children:[]
+        children: []
       },
-      {path: 'tablesView', component: TablesComponent},
-      {path: 'formsView', component: FormViewComponent}
+      { path: 'tablesView', component: TablesComponent },
+      { path: 'formsView', component: FormViewComponent }
     ]
   },
   {
     path: '', component: BlankComponent,
-    children:[
-      {path: 'landingView', component: LandingViewComponent},
-      {path: 'login', component: LoginComponent}
+    children: [
+      { path: 'landingView', component: LandingViewComponent },
+      { path: 'login', component: LoginComponent }
     ]
   },
 
   // Handle all other routes
-  {path: '**',    component: MainViewComponent }
- 
+  { path: '**', component: MainViewComponent }
+
 ];
