@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user';
+import { AuthService } from 'src/app/services/auth.service';
 declare var jQuery: any;
 @Component({
   selector: 'navigation',
@@ -8,7 +10,9 @@ declare var jQuery: any;
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  data:any
+  currentUser : User;
+  constructor(private router: Router, private authService:AuthService) { }
   ngAfterViewInit() {
     jQuery('#side-menu').metisMenu();
   }
@@ -17,6 +21,7 @@ export class NavigationComponent implements OnInit {
     return this.router.url.indexOf(routename) > -1;
   }
   ngOnInit() {
+
   }
 
 }

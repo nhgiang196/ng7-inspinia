@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      "datatables.net-fixedheader-bs@3.1.5",
+      "D:\\MyProject\\new-admin"
+    ]
+  ],
+  "_from": "datatables.net-fixedheader-bs@3.1.5",
+  "_id": "datatables.net-fixedheader-bs@3.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-fCu5XtHu+wCC8ttf023CyhBFnuwbGVh2pGMSCincG1iY4541CbLmcjVPMzhU3UYaVv5ljaHEdc33bQufs6bwnw==",
+  "_location": "/datatables.net-fixedheader-bs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "datatables.net-fixedheader-bs@3.1.5",
+    "name": "datatables.net-fixedheader-bs",
+    "escapedName": "datatables.net-fixedheader-bs",
+    "rawSpec": "3.1.5",
+    "saveSpec": null,
+    "fetchSpec": "3.1.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/datatables.net-fixedheader-bs/-/datatables.net-fixedheader-bs-3.1.5.tgz",
+  "_spec": "3.1.5",
+  "_where": "D:\\MyProject\\new-admin",
+  "author": {
+    "name": "SpryMedia Ltd",
+    "url": "http://datatables.net"
+  },
+  "bugs": {
+    "url": "https://datatables.net/forums"
+  },
+  "dependencies": {
+    "datatables.net-bs": "^1.10.15",
+    "datatables.net-fixedheader": "3.1.5",
+    "jquery": ">=1.7"
+  },
+  "description": "FixedHeader for DataTables with styling for [Bootstrap 3](http://getbootstrap.com/)",
+  "files": [
+    "css/**/*.css",
+    "js/**/*.js"
+  ],
+  "homepage": "https://datatables.net",
+  "keywords": [
+    "fixed headers",
+    "sticky",
+    "DataTables",
+    "jQuery",
+    "table",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "main": "js/fixedHeader.bootstrap.js",
+  "name": "datatables.net-fixedheader-bs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataTables/Dist-DataTables-FixedHeader-Bootstrap.git"
+  },
+  "style": "css/fixedHeader.bootstrap.css",
+  "version": "3.1.5"
+}

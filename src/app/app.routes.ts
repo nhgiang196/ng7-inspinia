@@ -9,6 +9,7 @@ import { LandingViewComponent } from './views/main-view/landing-view/landing-vie
 import { LoginComponent } from './views/login/login.component';
 import { TablesComponent } from './views/minor-view/tables/tables.component';
 import { FormViewComponent } from './views/minor-view/form-view/form-view.component';
+import { AuthGuard } from './services/auth.guard';
 export const ROUTES:Routes = [
   // Main redirect
   {path: '', redirectTo: 'mainView', pathMatch: 'full'},
@@ -17,12 +18,14 @@ export const ROUTES:Routes = [
   {
     path: '', component: BasicComponent,
     children: [
-      {path: 'mainView', component: MainViewComponent},
-      {path: 'dashView1', component: DashView1Component},
-      {path: 'dashView2', component: DashView2Component},      
+      {path: 'mainView', component: MainViewComponent, canActivate:[AuthGuard]},
+      {path: 'dashView1', component: DashView1Component,canActivate:[AuthGuard]},
+      {path: 'dashView2', component: DashView2Component,canActivate:[AuthGuard]},      
       {
         path: 'minorView', component: MinorViewComponent,
-        children:[]
+        children:[],
+        canActivate:[AuthGuard]
+
       },
       {path: 'tablesView', component: TablesComponent},
       {path: 'formsView', component: FormViewComponent}
