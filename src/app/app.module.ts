@@ -14,6 +14,7 @@ import { LayoutsModule } from './components/common/layouts/layouts.module';
 import { MainViewModule } from './views/main-view/main-view.module';
 import { MinorViewModule } from './views/minor-view/minor-view.module';
 import { LoginComponent } from './views/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { LoginComponent } from './views/login/login.component';
     BrowserModule,
     HttpClientModule,
     NgwWowModule,
-
+    FormsModule,
     //Views
     LayoutsModule,
     MainViewModule,

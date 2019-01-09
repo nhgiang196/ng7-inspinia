@@ -13,7 +13,7 @@ import { LandingViewComponent } from './landing-view/landing-view.component';
     LandingViewComponent
   ],
   imports: [
-    CommonModule
+    CommonModule 
   ],
   exports:[
   MainViewComponent,
